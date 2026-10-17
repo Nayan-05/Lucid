@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic-settings
+numpy
+pillow
+opencv-python-headless
+pydicom
+pytest
+httpx
+torch
+torchvision
+scikit-learn
+matplotlib
+sqlalchemy

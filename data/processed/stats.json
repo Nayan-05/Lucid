@@ -1,0 +1,45 @@
+{
+ "total": 5824,
+ "bad_files": 0,
+ "duplicates_removed": 32,
+ "classes": [
+  "NORMAL",
+  "PNEUMONIA"
+ ],
+ "patient_level_split": true,
+ "class_distribution": {
+  "NORMAL": 1579,
+  "PNEUMONIA": 4245
+ },
+ "imbalance_ratio": 2.69,
+ "top_dims": {
+  "1072x648": 7,
+  "1008x704": 7,
+  "992x592": 6,
+  "1216x872": 6,
+  "1080x728": 6
+ },
+ "splits": {
+  "train": {
+   "n": 4076,
+   "classes": {
+    "NORMAL": 1167,
+    "PNEUMONIA": 2909
+   }
+  },
+  "val": {
+   "n": 874,
+   "classes": {
+    "PNEUMONIA": 686,
+    "NORMAL": 188
+   }
+  },
+  "test": {
+   "n": 874,
+   "classes": {
+    "PNEUMONIA": 650,
+    "NORMAL": 224
+   }
+  }
+ }
+}
