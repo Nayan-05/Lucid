@@ -3,3 +3,11 @@ node_modules/
 .env
 data/raw/
 *.pt
+.venv/
+.pytest_cache/
+*.db
+data/processed/
+output/
+dist/
+.vscode/
+*.pyc
