@@ -1,0 +1,8 @@
+# Research packages (rule book R6). Install after requirements.txt:
+#   pip install -r requirements-research.txt
+# Chosen to work with Python 3.11 to 3.14 and with numpy 1.26 (Mac) or numpy 2.x.
+pandas==2.3.3
+scikit-learn==1.7.2
+scipy==1.16.3
+matplotlib==3.10.7
+pytest==8.4.2
