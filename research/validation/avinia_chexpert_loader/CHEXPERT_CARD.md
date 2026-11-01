@@ -10,10 +10,17 @@
 - **Storage:** Downloader's laptop only. Dataset files must not be committed or shared.
 
 ## What the data looks like
-(Task 2) — document the data structure.** Record the CSV and JSON schemas, their record counts, and how records relate. Image tables/files are not part of the current download.
+Metadata CSV: 223,462 rows; 64,725 distinct patients.
+View counts: Frontal 191,071; Lateral 32,391.
+ap_pa counts: AP 161,622; PA 29,432; blank 32,391; LL 16; RL 1.
+Labels JSON: 223,462 rows. Relevant label columns: Pneumonia and No Finding.
+Pneumonia counts: blank 195,926; -1.0 19,367; 1.0 4,847; 0.0 3,322.
+No Finding counts: blank 202,203; 1.0 21,259.
+Metadata rows matching a label row: 223,462.
 
 ## Label rule
-(Task 2) — document the labeling procedure.** Specify the source field(s), exact label mapping, and treatment of missing, uncertain, or conflicting labels. No label rule was provided in the source notes.
+label 1 if Pneumonia = 1.0; label 0 if No Finding = 1.0 and Pneumonia is neither 1.0 nor -1.0; drop everything else (uncertain, blank, and other diseases); keep frontal views only; one image per patient; balanced sample of up to 500 per class with seed 42; labels from impression_fixed.json.
+
 
 ## Counts after every filter step
 (Task 4) — record observed counts.** Provide the baseline count and count after each filter, with the criteria used. No counts were provided in the source notes; do not substitute estimates.
