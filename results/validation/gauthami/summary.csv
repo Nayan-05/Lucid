@@ -1,0 +1,3 @@
+dataset,n,n_pos,n_neg,auc,auc_ci_low,auc_ci_high,threshold,threshold_source,sensitivity,specificity,accuracy
+kermany_test,874,650,224,0.9973,0.9947,0.9993,0.0174,kermany_val,0.9985,0.8616,0.9634
+kermany_test,874,650,224,0.9973,0.9947,0.9993,0.5,fixed_0.5,0.9815,0.9777,0.9805
