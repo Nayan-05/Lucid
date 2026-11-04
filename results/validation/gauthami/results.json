@@ -1,0 +1,47 @@
+{
+ "meta": {
+  "project": "lucid",
+  "group": "A",
+  "author": "gauthami",
+  "date": "2026-11-04",
+  "git_commit": "bfc2569",
+  "seed": 42,
+  "checkpoint": "models/classifier.pt",
+  "dataset": "kermany_test",
+  "n": 874
+ },
+ "results": {
+  "threshold": 0.017392893988712622,
+  "threshold_source": "kermany_val",
+  "rows": [
+   {
+    "dataset": "kermany_test",
+    "n": 874,
+    "n_pos": 650,
+    "n_neg": 224,
+    "auc": 0.9973,
+    "auc_ci_low": 0.9947,
+    "auc_ci_high": 0.9993,
+    "threshold": 0.0174,
+    "threshold_source": "kermany_val",
+    "sensitivity": 0.9985,
+    "specificity": 0.8616,
+    "accuracy": 0.9634
+   },
+   {
+    "dataset": "kermany_test",
+    "n": 874,
+    "n_pos": 650,
+    "n_neg": 224,
+    "auc": 0.9973,
+    "auc_ci_low": 0.9947,
+    "auc_ci_high": 0.9993,
+    "threshold": 0.5,
+    "threshold_source": "fixed_0.5",
+    "sensitivity": 0.9815,
+    "specificity": 0.9777,
+    "accuracy": 0.9805
+   }
+  ]
+ }
+}
