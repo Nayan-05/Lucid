@@ -1,0 +1,20 @@
+{
+ "meta": {
+  "project": "lucid",
+  "author": "bashma",
+  "date": "2026-11-08",
+  "git_commit": "012f34d",
+  "seed": 42,
+  "checkpoint": "none (loader)",
+  "dataset": "nih_children",
+  "n": 152
+ },
+ "results": {
+  "rows": 112120,
+  "impossible_ages_dropped": 0,
+  "positives_available": 76,
+  "negatives_available": 1510,
+  "final_per_class": 76,
+  "final_total": 152
+ }
+}
