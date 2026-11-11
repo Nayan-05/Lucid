@@ -23,4 +23,26 @@ label 1 if Pneumonia = 1.0; label 0 if No Finding = 1.0 and Pneumonia is neither
 
 
 ## Counts after every filter step
-(Task 4) — record observed counts.** Provide the baseline count and count after each filter, with the criteria used. No counts were provided in the source notes; do not substitute estimates.
+
+| Step | Count |
+|---|---:|
+| All metadata rows | 223,462 |
+| Frontal only | 191,071 |
+| Frontal with a label row | 191,071 |
+| Uncertain Pneumonia rows dropped | 16,594 |
+| Neither positive nor negative rows dropped | 171,204 |
+| Positive patients available, one image each | 3,073 |
+| Negative patients available, one image each | 12,889 |
+| Final balanced sample, per class | 500 |
+| Final balanced sample, total | 1,000 |
+
+The two dropped-count measures overlap; do not add them together. The available positive and negative counts are deduplicated patient counts.
+
+## Image download
+
+- **Method:** Redivis Python package (`redivis`) with browser sign-in; no API token was used.
+- **Tables:** `PNG_train` and `PNG_valid`.
+- **Selection:** 1,000 images listed in `needed_images.txt`; `.jpg` paths were mapped to `.png`.
+- **Download date:** 2026-11-08.
+- **Local destination:** `datasets/chexpert/images/`, preserving split, patient, and study folders.
+- **Verification:** 1,000 images found; 0 not found.
