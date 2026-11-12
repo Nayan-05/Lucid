@@ -1,3 +1,9 @@
 dataset,n,n_pos,n_neg,auc,auc_ci_low,auc_ci_high,threshold,threshold_source,sensitivity,specificity,accuracy
 kermany_test,874,650,224,0.9973,0.9947,0.9993,0.0174,kermany_val,0.9985,0.8616,0.9634
 kermany_test,874,650,224,0.9973,0.9947,0.9993,0.5,fixed_0.5,0.9815,0.9777,0.9805
+chexpert,1000,500,500,0.7598,0.726,0.7908,0.0174,kermany_val (given with --threshold),0.944,0.218,0.581
+chexpert,1000,500,500,0.7598,0.726,0.7908,0.5,fixed_0.5,0.842,0.446,0.644
+nih,1000,500,500,0.7854,0.758,0.8156,0.0174,kermany_val (given with --threshold),0.902,0.408,0.655
+nih,1000,500,500,0.7854,0.758,0.8156,0.5,fixed_0.5,0.7,0.728,0.714
+nih_children,152,76,76,0.7273,0.6473,0.805,0.0174,kermany_val (given with --threshold),0.8684,0.3684,0.6184
+nih_children,152,76,76,0.7273,0.6473,0.805,0.5,fixed_0.5,0.6447,0.6579,0.6513

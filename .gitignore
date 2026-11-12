@@ -11,3 +11,4 @@ output/
 dist/
 .vscode/
 *.pyc
+per_image.csv
