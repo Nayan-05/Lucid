@@ -1,0 +1,25 @@
+{
+ "meta": {
+  "project": "lucid",
+  "group": "A",
+  "author": "avinia",
+  "date": "2026-11-08",
+  "git_commit": "6c45ee8",
+  "seed": 42,
+  "checkpoint": "none (loader)",
+  "dataset": "chexpert_plus",
+  "n": 1000,
+  "labels_file": "impression_fixed.json"
+ },
+ "results": {
+  "rows": 223462,
+  "frontal": 191071,
+  "frontal_with_labels": 191071,
+  "uncertain_pneumonia_dropped": 16594,
+  "not_pos_not_neg_dropped": 171204,
+  "positives_available": 3073,
+  "negatives_available": 12889,
+  "final_per_class": 500,
+  "final_total": 1000
+ }
+}
