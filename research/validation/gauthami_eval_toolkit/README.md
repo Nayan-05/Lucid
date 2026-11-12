@@ -98,3 +98,6 @@ Chosen once on the Kermany validation split at 90% specificity and reused unchan
 - scikit-learn roc_auc_score: https://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_auc_score.html
 
 Research and educational use only. Not a clinical or diagnostic tool.
+
+## Note on the threshold
+The Kermany-val threshold is 0.017392893988712622. The NIH and NIH children rows were run with the rounded value 0.0174 by the dataset owner. The difference is negligible, and the results were not rerun.
